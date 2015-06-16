@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog_word</class>
+ <widget class="QDialog" name="dialog_word">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>346</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>你画我歪</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_chl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>频道词库</string>
+   </property>
+   <widget class="QPlainTextEdit" name="word_edit_chl">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>148</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_edit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>130</y>
+      <width>68</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="text">
+     <string>编辑词库</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_sumit_chl">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>131</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>子频道管理员可以点击
+编辑按钮对该子频道词
+库进行编辑，编辑完毕
+后点击上传将更新频道
+词库。
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_sumit_chl">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>160</y>
+      <width>141</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>新增到频道词库</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ret_chl">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>100</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_edit_apply">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>243</x>
+      <y>130</y>
+      <width>68</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="text">
+     <string>完成编辑</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_sys">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>系统词库</string>
+   </property>
+   <widget class="QPlainTextEdit" name="word_edit_sys">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>148</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_sumit_sys">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>131</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>提交到系统词库</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ret_sys">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>130</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_sumit_sys">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>131</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>普通玩家可在左边栏每
+行输入字数不大于八的
+词语，提交到系统，待
+审核通过后将添加到系
+统词库。</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+  </widget>
+  <zorder>groupBox_sys</zorder>
+  <zorder>groupBox_chl</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

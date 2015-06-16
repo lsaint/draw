@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setting_dialog</class>
+ <widget class="QDialog" name="setting_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>225</width>
+    <height>207</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>你画我歪</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>201</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="button_confirm">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_cancel">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_applly">
+      <property name="text">
+       <string>应用</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>17</y>
+     <width>201</width>
+     <height>128</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_app">
+      <property name="text">
+       <string>应用模式</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="box_game_mode">
+      <property name="toolTip">
+       <string>设置游戏模式</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>轮流模式</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>主持模式</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>标准模式</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_talk">
+      <property name="text">
+       <string>发言模式</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="box_talk_mode">
+      <property name="toolTip">
+       <string>设置聊天模式</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>自由发言</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>禁言围观者</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>禁言所有人</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_interval">
+      <property name="text">
+       <string>发言间隔</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="box_interval">
+      <property name="toolTip">
+       <string>设置文字聊天的发言间隔</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="suffix">
+       <string>秒</string>
+      </property>
+      <property name="prefix">
+       <string/>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>60</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_word_chl">
+      <property name="text">
+       <string>频道词库</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="box_chlword_rate">
+      <property name="toolTip">
+       <string>设置标准模式时频道词库的出现概率</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>不使用</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>低比例</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>中比例</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>高比例</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>setting_dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

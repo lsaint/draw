@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>你画我歪画作列表</title>
+<style type="text/css">
+body {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	margin: 0px;
+	background-image: url(static/images/b2.png);
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-left: 8px;
+    border: 0px; 
+    overflow: hidden;
+}
+.c1 {
+	background-image: url(static/images/img_01.gif);
+	height: 23px;
+	width: 24px;
+}
+.c2 {
+	background-image: url(static/images/img_02.gif);
+}
+.c3 {
+	background-image: url(static/images/img_03.gif);
+	height: 23px;
+	width: 21px;
+}
+.c4 {
+	background-image: url(static/images/img_04.gif);
+}
+.c5 {
+	background-image: url(static/images/img_05.gif);
+}
+.c6 {
+	background-image: url(static/images/img_06.gif);
+}
+.c7 {
+	background-image: url(static/images/img_07.gif);
+	height: 18px;
+	width: 24px;
+}
+.c8 {
+	background-image: url(static/images/img_08.gif);
+}
+.c9 {
+	background-image: url(static/images/img_09.gif);
+	height: 18px;
+	width: 21px;
+}
+.p1 {
+	height: 114px;
+	width:190px;
+	position: relative;
+}
+.p2 {
+	position: relative;
+	height: 114px;
+	width: 190px;
+	overflow:inherit;
+!important;/* 这里为了解决IE6不兼容的问题	position:relative;会撑页面 */
+	_overflow:hidden;
+	border: 1px solid #666;
+}
+.PD {
+    font-size: 12px;
+	height: 20px;
+	width: 190px;
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 1;
+	clip: rect(auto,auto,auto,auto);
+	bottom: 20px;
+	line-height: 20px;
+	background-image: url(static/images/p.png);
+	color: #FFF;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+.text {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body oncontextmenu="return false" oncopy="return false" oncut="return false" onpaste="return false" scoll="no" ondragstart="return false">
+<table width="670" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class=c1></td>
+    <td width="120" class="text">${topchn}频道最新画作</td>
+    <td width="500" class="c2"></td>
+    <td class="c3"></td>
+  </tr>
+  <tr>
+    <td class="c4"></td>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        % for each in channel_images_location: 
+        <td width="190" align="center" class="p1">
+          <div class="p2"><img src="${each[1]}" width="190" height="114" title="作者：${each[2]}  题目：${each[3]}"/>
+            <div class="PD">所属频道：${each[0]}</div>
+          </div>
+        </td>
+        <td align="center"></td>
+        % endfor
+      </tr>
+    </table></td>
+    <td background="static/images/img_06.gif"></td>
+  </tr>
+  <tr>
+    <td class="c7"></td>
+    <td colspan="2"  class="c8"></td>
+    <td class="c9"></td>
+  </tr>
+</table>
+<table width="670" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="c1"></td>
+    <td width="100" class="text">你画我歪最新画作</td>
+    <td width="500" class="c2"></td>
+    <td class="c3"></td>
+  </tr>
+  <tr>
+    <td class="c4"></td>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        % for each in full_images_location:
+        <td width="190" align="center" class="p1">
+          <div class="p2"><img src="${each[1]}" width="190" height="114" title="作者：${each[2]}  题目：${each[3]}"/>
+            <div class="PD">所属频道：${each[0]}</div>
+          </div>
+        </td>
+        <td align="center"></td>
+        % endfor
+      </tr>
+    </table></td>
+    <td background="static/images/img_06.gif"></td>
+  </tr>
+  <tr>
+    <td class="c7"></td>
+    <td colspan="2"  class="c8"></td>
+    <td class="c9"></td>
+  </tr>
+</table>
+<table width="670" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="c1"></td>
+    <td width="80" class="text">创意画作列表</td>
+    <td width="500" class="c2"></td>
+    <td class="c3"></td>
+  </tr>
+  <tr>
+    <td class="c4"></td>
+    <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        % for each in good_images_location: 
+        <td width="190" align="center" class="p1">
+          <div class="p2"><img src="${each[1]}" width="190" height="114" title="作者：${each[2]}  题目：${each[3]}"/>
+            <div class="PD">所属频道：${each[0]}</div>
+          </div>
+        </td>
+        <td align="center"></td>
+        % endfor
+      </tr>
+    </table></td>
+    <td background="static/images/img_06.gif"></td>
+  </tr>
+  <tr>
+    <td class="c7"></td>
+    <td colspan="2"  class="c8"></td>
+    <td class="c9"></td>
+  </tr>
+</table>
+</body>
+</html>

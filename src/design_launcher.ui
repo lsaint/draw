@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>launcher</class>
+ <widget class="QDialog" name="launcher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res/res.qrc">
+    <normaloff>:/image/icon.png</normaloff>:/image/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#launcher  { 
+		background-image: url(:/image/launcher.png);
+}
+
+#launcher  * { 
+		background-image: url();
+}</string>
+  </property>
+  <widget class="QPushButton" name="button_enter_root">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>500</y>
+     <width>209</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#button_enter_root { 
+		border-image: url(:/image/button_root.png);
+}
+#button_enter_root:hover { 
+		border-image: url(:/image/button_root_h.png);
+}
+#button_enter_root:pressed { 
+		border-image: url(:/image/button_root_p.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_enter_child">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>458</y>
+     <width>209</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#button_enter_child { 
+		border-image: url(:/image/button_sub.png);
+}
+#button_enter_child:hover { 
+		border-image: url(:/image/button_sub_h.png);
+}
+#button_enter_child:pressed { 
+		border-image: url(:/image/button_sub_p.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="chl_list">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>288</y>
+     <width>251</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#chl_list  { 
+		background-color: transparent;
+	    border:none;
+     	selection-background-color: #CFCFCF;
+}</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>false</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::NoSelection</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_close">
+   <property name="geometry">
+    <rect>
+     <x>971</x>
+     <y>8</y>
+     <width>20</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#button_close:hover { 
+		border-image: url(:/image/close_h.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_min">
+   <property name="geometry">
+    <rect>
+     <x>935</x>
+     <y>13</y>
+     <width>20</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#button_min:hover { 
+		border-image: url(:/image/minimized_h.png);
+}
+#button_min:pressed { 
+		border-image: url(:/image/minimized_p.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_chl_info">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>2</y>
+     <width>391</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>正在连接服务器......</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>23</y>
+     <width>381</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>幻 小屮  (彩蛋？)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_close</sender>
+   <signal>clicked()</signal>
+   <receiver>launcher</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>967</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1013</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_min</sender>
+   <signal>clicked()</signal>
+   <receiver>launcher</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>945</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>-39</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

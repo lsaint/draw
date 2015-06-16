@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help_dialog</class>
+ <widget class="QDialog" name="help_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>761</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>761</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#help_dialog  { 
+		background-image: url(:/image/bg_help.png);
+}
+</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="button_confirm">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>440</y>
+     <width>74</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#button_confirm { 
+		border-image: url(:/image/confirm.png);
+}
+#button_confirm:hover { 
+		border-image: url(:/image/confirm_h.png);
+}
+#button_confirm:pressed { 
+		border-image: url(:/image/confirm_p.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>741</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+border:none;</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;你画我歪&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;是一个画图猜词的游戏，玩法丰富，娱乐性强。玩家可以单人作画或多人轮流完成一幅画，将你所看到的词语在画板区域内画出来，其它玩家根据画手的画，通过在游戏聊天框内输入文字来猜答案。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;新手攻略&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1、点击游戏图标后，选择进入频道大厅游戏或者进入子频道游戏就可以进入游戏了。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2、进入游戏后，看到红色的“我要画”按钮时，就可以抢主笔画画了。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3、抢到主笔的玩家，根据画板上方的画题，在画板底侧选好画笔粗细和颜色就可以开始画画了，画错了可用橡皮擦擦掉或者直接清屏。 注意画板右上角倒计时的小闹钟，时间到了就不可以再画啦。 画画时，只要有围观观众猜中你画的是什么，你就会获得相应的数值奖励。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4、没有抢到主笔的玩家，可以猜画手的画，在聊天框内输入你的答案按回车提交就可以猜了。 猜对答案也会有数值奖励，同时还有一定几率获得鲜花或鸡蛋。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5、画手画完后，围观的观众就可以给画手送鲜花、扔鸡蛋啦。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;【你画我歪】提供&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;三&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;种模式供玩家选择：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;标准模式&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：由系统出词，玩家通过抢主笔的方式成为画手。画手在设定时间内，画出看到的词语，其它玩家根据画手的画来猜答案，玩家猜对会有系统提示，并可获得相应的数值奖励。标准模式每次仅限一人作画。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;主持模式&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：管理员设置一个人作为主笔，没有时间限制进行作画。管理员可以设置一名主笔并私聊告诉主笔主题，让其他人猜主笔画的是什么。主持模式暂不支持系统出词。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;轮流模式&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：轮流模式可同时支持9个人轮流共同完成一幅画，每个画手可以画10秒。轮流模式暂不支持系统出词。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	主持模式和轮流模式需要管理员在设置中更改，这两种模式比较适合频道内举办活动时采用。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;词库系统&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	你画我歪提供添词功能。玩家可以在游戏过程中点击界面左下角的“添词”按钮来添加词语。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	你画我歪提供两种词库：系统词库和频道词库。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	普通玩家可以在系统词库输入框输入字数不大于八字的词语交，待审核通过后即可添加到系统词库，并可以作为该词的提交者在游戏中予以显示。频道词库只有二级子频道管理员（粉马）及以上级别的用户可以作。玩家可以新增词语到频道词库，也可以对提交到频道词库内的词语进行编辑。对频道词库，玩家可以通过修改设置来选择是否使用频道词库和使用例。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;积分系统&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	玩家在画画或者猜词的过程中，首中、歪中或者被歪中都会获得相应的数值累积，这些数值在下一个版本中可兑换为相应的积分，用于升级，获得等级称号等。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;首中的玩家比歪中的玩家将会获得更多的积分，同时也会有更大的几率获得鲜花或鸡蛋，后续也会有更多的优惠。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;评价系统&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	当画手画完后，围观的观众就可以通过给画手送鲜花来表扬画手，或者扔鸡蛋来惩罚画手了。 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	猜中答案就有一定几率获得鲜花和鸡蛋啦，第一个猜中的人获得的几率会更大。花篮或蛋框里最多可以装3朵鲜花或3只鸡蛋，装满后就不能再获得鲜花或鸡蛋了，需要送出鲜花或鸡蛋才可以重新获得。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;玩家送的鲜花和鸡蛋会在下一局游戏开始后显示在画手的个人名片里。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;画像上传系统&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	画手在本局绘画时间内可以对自己的画作进行上传操作。对上传的作品，会分为以下三类在游戏首页予以展示：最新画作，频道画作，最具创意画作。后续版本中，玩家可以直接对这些作品评分。 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;如果你想展示自己，赶快来上传你的作品吧！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;关于你画我歪&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	你画我歪目前仍处于开发阶段，如果有建议和BUG反馈，欢迎加入YY群4663439进行讨论。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ff0000;&quot;&gt;免责声明&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; font-weight:600;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline;&quot;&gt;画作一经上传，即同意其该图片所有权归多玩歪歪官方所有，多玩歪歪官方有权对其进行审核、屏蔽、删除、出版或者其他处置，如发现画作中有敏感、不文明、不合法等各种信息将直接删除。个人不得以官方名义使用已上传作品。如因不遵守该条例出现的任何问题，官方不承担任何责任。本条例最终解释权归多玩歪歪官方所有。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; font-style:italic;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_confirm</sender>
+   <signal>clicked()</signal>
+   <receiver>help_dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>363</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>471</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
